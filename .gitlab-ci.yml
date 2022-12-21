@@ -9,7 +9,7 @@ frontend-build-deploy-prod:
   tags:
     - ema
   rules:
-    - if: CI_COMMIT_BRANCH == "production"
+    - if: $CI_COMMIT_BRANCH == "production"
       changes:
         - ./frontend/**/*
 
@@ -20,6 +20,6 @@ backend-build-deploy-prod:
   tags:
     - ema
   rules:
-    - if: CI_COMMIT_BRANCH == "production"
+    - if: $CI_COMMIT_BRANCH == "production"
       changes:
         - ./backend/**/*
