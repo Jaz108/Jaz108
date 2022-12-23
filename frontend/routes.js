@@ -51,4 +51,4 @@ router.get('/delete/:emp_id', async(req, res)=>{
     res.render('listEmployee', {data: data})
 })
 
-module.exports= router 
+module.exports= router
