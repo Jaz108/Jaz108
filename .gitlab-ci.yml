@@ -5,6 +5,7 @@ frontend-build-deploy-prod:
   stage: deploy
   script:
     - echo "in frontend-deploy-prod job"
+    - rsync -avh frontend/ deployer@127.0.0.1:~/ema/frontend/
     - >
       ssh deployer@127.0.0.1 "
       . ~/.profile &&
