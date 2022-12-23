@@ -5,10 +5,10 @@ frontend-build-deploy-prod:
   stage: deploy
   script:
     - echo "in frontend-deploy-prod job"
-    - ssh deployer@127.0.0.1 bash <<EOF
-      node -v
-      npm -v
-      EOF
+    - >
+      ssh deployer@127.0.0.1 bash "
+      node -v,
+      npm -v"
   tags:
     - ema
   rules:
