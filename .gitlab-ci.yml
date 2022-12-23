@@ -26,6 +26,16 @@ backend-build-deploy-prod:
   stage: deploy
   script:
     - echo "in backend-deploy-prod job"
+    - rsync -avh backend/ deployer@127.0.0.1:~/ema/backend/
+    - >
+      ssh deployer@127.0.0.1 "
+      . ~/.profile &&
+      . ~/.bashrc &&
+      . ~/.nvm/nvm.sh &&
+      node -v &&
+      cd ema/backend/ &&
+      npm install &&
+      pm2 restart app.js"
   tags:
     - ema
   rules:
