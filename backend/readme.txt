@@ -7,4 +7,4 @@ Please run the following command to create the table before run the app.js
    emp_name varchar(255) NOT NULL,
    emp_contact varchar(10),
    emp_add varchar(255) DEFAULT false
-   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+   ) ENGINE=InnoDB DEFAULT CHARSET=utf8; 
