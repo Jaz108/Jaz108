@@ -7,8 +7,8 @@ frontend-build-deploy-prod:
     - echo "in frontend-deploy-prod job"
     - >
       ssh deployer@127.0.0.1 bash "
-      node -v,
-      npm -v"
+      ls,
+      hostname"
   tags:
     - ema
   rules:
