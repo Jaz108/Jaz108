@@ -9,6 +9,7 @@ frontend-build-deploy-prod:
       ssh deployer@127.0.0.1 "
       . ~/.profile &&
       . ~/.bashrc &&
+      . ~/.nvm/nvm.sh &&
       node -v &&
       cd ema/frontend &&
       npm install &&
