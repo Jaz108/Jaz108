@@ -6,7 +6,7 @@ frontend-build-deploy-prod:
   script:
     - echo "in frontend-deploy-prod job"
     - >
-      ssh deployer@127.0.0.1 bash "
+      ssh deployer@127.0.0.1 "
       ls,
       hostname"
   tags:
