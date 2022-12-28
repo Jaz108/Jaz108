@@ -1,5 +1,15 @@
 stages:
+  - test
   - deploy
+
+nginx-config-test:
+  stage: test
+  script:
+    - echo "in test nginx job"
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+  tags:
+    - ema
 
 frontend-build-deploy-prod:
   stage: deploy
