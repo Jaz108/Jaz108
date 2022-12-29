@@ -6,6 +6,7 @@ nginx-config-test:
   stage: test
   script:
     - echo "in test nginx job"
+    - docker run --rm -v $PWD/nginx:/data/ --name check-nginx-conf -t -a stdout nginx:latest nginx -t -c /data/nginx.conf
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
   tags:
