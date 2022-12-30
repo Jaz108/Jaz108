@@ -53,4 +53,14 @@ backend-build-deploy-prod:
     - if: $CI_COMMIT_BRANCH == "production"
       changes:
         - backend/**/*
- 
+
+deploy-nginx-conf:
+  stage: deploy
+  script:
+    - echo "in deploy-nginx-conf script"
+  tags:
+    - ema
+  rules:
+    - if: $CI_COMMIT_BRANCH == "production"
+      changes:
+        - nginx/**/*
