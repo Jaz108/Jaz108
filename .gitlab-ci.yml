@@ -57,6 +57,7 @@ deploy-nginx-conf:
   stage: deploy
   script:
     - echo "in deploy-nginx-conf script"
+    - rsync -avh ../nginx/ deployer@127.0.0.1:/home/deployer/ema/nginx
   tags:
     - ema
   rules:
