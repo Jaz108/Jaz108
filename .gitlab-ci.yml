@@ -58,6 +58,7 @@ deploy-nginx-conf:
   script:
     - echo "in deploy-nginx-conf script"
     - rsync -avh nginx/ deployer@127.0.0.1:/home/deployer/ema/nginx
+    - ssh deployer@127.0.0.1 "bash /home/deployer/ema/nginx/restart_nginx.sh"
   tags:
     - ema
   rules:
