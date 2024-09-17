@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Jaz108
-- 👀 I’m interested in ...Earning Loads of Money
-- 🌱 I’m currently learning ...Python
-- 💞️ I’m looking to collaborate on ...
+- 👀 I’m interested in A2Z DevOps.
+- 🌱 I’m currently learning Python
+- 💞️ I’m looking to collaborate on open source projects
 - 📫 How to reach me ...
 
 <!---
