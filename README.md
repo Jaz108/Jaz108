@@ -2,8 +2,7 @@
 
 🚀 I'm a DevOps Engineer with 3+ years of hands-on experience building and automating scalable cloud infrastructure across AWS, GCP, and Hetzner.
 
-🔧 My toolbox includes Terraform, Kubernetes (CKA certified), Vault, Jenkins, Ansible, GitLab CI, and Python. I love writing infra as code, securing secrets, and optimizing CI/CD workflows.
-
+🔧 My toolbox includes Terraform, Kubernetes (CKA certified), Vault, Jenkins, Ansible, GitLab CI, and Python.
 📦 Recent projects:
 - Built multi-cloud Kubernetes clusters with Helm, Longhorn, and Prometheus monitoring
 - Automated VM inventory, backup scripts, and CI/CD bootstrapping with Python & Ansible
@@ -12,7 +11,7 @@
 🎯 I’m currently learning:  
 - Advanced Kubernetes patterns (service meshes, GitOps)
 - Scaling DevOps best practices for production workloads
-- Golang for contributing to Kubernetes-native tooling
+- Fixing CI/CD issue across Jenkins and Github Actions.
 
 💡 I’m looking to collaborate on:
 - Open-source infra automation tools
